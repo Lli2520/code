@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d57091b-a011-48dd-bbe9-c8fea79fcd3a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/briup/test7/util/LoadArgs.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2Xn8DSUOEXEDd6q2QqB8sT7d2tH" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\renjr_Server\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.ServerMain">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerMain (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.test3.ServerMain" />
+      <module name="lixin_Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.test3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerMain (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.test4.ServerMain" />
+      <module name="lixin_Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.test4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerMain (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.test5.ServerMain" />
+      <module name="lixin_Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.test5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerMain (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.test6.ServerMain" />
+      <module name="lixin_Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.test6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.test7.ServerMain" />
+      <module name="lixin_Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.test7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.ServerMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d57091b-a011-48dd-bbe9-c8fea79fcd3a" name="Default Changelist" comment="" />
+      <created>1699253363628</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699253363628</updated>
+      <workItem from="1699253364642" duration="15000" />
+      <workItem from="1699253386153" duration="1706000" />
+      <workItem from="1699256464166" duration="10000" />
+      <workItem from="1699256482488" duration="24000" />
+      <workItem from="1699257749531" duration="128000" />
+      <workItem from="1699258014435" duration="7162000" />
+      <workItem from="1699269511313" duration="601000" />
+      <workItem from="1699346026809" duration="6572000" />
+      <workItem from="1699358603651" duration="109000" />
+      <workItem from="1699358839363" duration="104000" />
+      <workItem from="1699358978224" duration="80000" />
+      <workItem from="1699359107144" duration="1108000" />
+      <workItem from="1699360511102" duration="2000" />
+      <workItem from="1699424918261" duration="5491000" />
+      <workItem from="1699434702551" duration="1279000" />
+      <workItem from="1699436777199" duration="3715000" />
+      <workItem from="1699488310959" duration="9000" />
+      <workItem from="1699511660247" duration="8267000" />
+      <workItem from="1699531377828" duration="855000" />
+      <workItem from="1699534242297" duration="34000" />
+      <workItem from="1699574039739" duration="3000" />
+      <workItem from="1699598181240" duration="2167000" />
+      <workItem from="1699602906214" duration="1000" />
+      <workItem from="1699833671604" duration="8778000" />
+      <workItem from="1699878802386" duration="2119000" />
+      <workItem from="1699919906946" duration="4321000" />
+      <workItem from="1699924711541" duration="1607000" />
+      <workItem from="1700007035730" duration="813000" />
+      <workItem from="1700200555732" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

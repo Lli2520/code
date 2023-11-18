@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <stu id="2022001" add="内蒙古">
+        <name>王五</name>
+        <age>23</age>
+    </stu>
+    <stu id="2022002">
+        <name>李四</name>
+        <age>20</age>
+    </stu>
+</students>

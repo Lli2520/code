@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE entities [
+        <!ENTITY company "昆山杰普软件科技有限公司">
+        ]>
+<!-- 这是一个注释  不能用到标签里   注释不能嵌套  注释中不能出现 -->
+<entities>
+
+    <printMsg 出题人='Andy&apos;Q'>请求出23^34&amp;1&lt;24>>2</printMsg>
+    <show>&company;</show>
+    <show>在xml中&amp;不能直接输出 需要使用预定义实体来输出 预定义实体的写法应该是<![CDATA[&amp;]]></show>
+    <![CDATA[&ls;,.,.<><><><><><><]]>
+</entities>

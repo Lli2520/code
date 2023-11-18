@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<class>
+    <student id="1" born_date="2002/01/01">
+        <name>撒哈拉小公主</name>
+        <age>18</age>
+    </student>
+    <student>
+        <name>B站小王子</name>
+        <age>18</age>
+    </student>
+    <student>
+        <name>B站小公主</name>
+        <age>18</age>
+    </student>
+    <student>
+        <name>蛋仔小公主</name>
+        <age>18</age>
+    </student>
+    <student>
+        <name>撒哈拉小公主</name>
+        <age>18</age>
+    </student>
+    <student>
+        <name>健身达人</name>
+        <age>18</age>
+    </student>
+    <student>
+        <name>抖音小王子</name>
+        <age>18</age>
+    </student>
+    <student>
+        <name>侦察兵</name>
+        <age>18</age>
+    </student>
+
+</class>

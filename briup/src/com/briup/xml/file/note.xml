@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<notes>
+    <note date="1986/09/12" id="1">
+        <to>梦云</to>
+        <from>法老</from>
+        <msg>十载未见你回信 进来可好</msg>
+    </note>
+    <note id="2">
+        <date>2020/02/19</date>
+        <to>everyOne</to>
+        <from>国家疾控中心</from>
+        <msg>广大市民朋友 近期新型冠状病毒肆虐 请各位减少外出</msg>
+    </note>
+</notes>

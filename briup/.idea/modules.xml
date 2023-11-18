@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/briup.iml" filepath="$PROJECT_DIR$/briup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lixinServer/lixinServer.iml" filepath="$PROJECT_DIR$/../lixinServer/lixinServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lixin_Server/lixin_Server.iml" filepath="$PROJECT_DIR$/../lixin_Server/lixin_Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mvn_test/mvn_test.iml" filepath="$PROJECT_DIR$/../mvn_test/mvn_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sms/p1/p1.iml" filepath="$PROJECT_DIR$/../sms/p1/p1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sms/p2/p2.iml" filepath="$PROJECT_DIR$/../sms/p2/p2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sms/sms.iml" filepath="$PROJECT_DIR$/../sms/sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sms/sms_entity/sms_entity.iml" filepath="$PROJECT_DIR$/../sms/sms_entity/sms_entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sms/sms_jdbc/sms_jdbc.iml" filepath="$PROJECT_DIR$/../sms/sms_jdbc/sms_jdbc.iml" />
+    </modules>
+  </component>
+</project>
