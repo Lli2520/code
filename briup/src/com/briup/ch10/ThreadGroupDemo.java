@@ -58,7 +58,7 @@ public class ThreadGroupDemo {
         Thread[] threads = new Thread[count];
         int i = group2.enumerate(threads);
         for (Thread thread1 : threads) {
-            System.out.println("arr-" + thread1);
+            System.out.println("arr-"+thread1);
         }
     }
 }

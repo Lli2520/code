@@ -1,9 +1,9 @@
 package com.briup.jdbc;
 
 public class Dept {
-    private int id;
+    private  int id;
     private String name;
-    private int regionId;
+    private  int regionId;
 
     public Dept(int id, String name, int regionId) {
         this.id = id;

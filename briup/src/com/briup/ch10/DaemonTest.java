@@ -27,10 +27,10 @@ public class DaemonTest {
         };
         //创建子线程2: Runnable实现类 + 匿名内部类
         // 从100循环输出到50，每次输出后停顿200ms
-        Thread t2 = new Thread(new Runnable() {
+       Thread t2= new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 100; i > 49; i--) {
+                for (int i = 100; i >49 ; i--) {
                     System.out.println(i);
                     try {
                         Thread.sleep(200);
@@ -40,9 +40,9 @@ public class DaemonTest {
                 }
             }
         });
-        t1.start();
+       t1.start();
 
-        t2.setDaemon(true);
-        t2.start();
+       t2.setDaemon(true);
+       t2.start();
     }
 }

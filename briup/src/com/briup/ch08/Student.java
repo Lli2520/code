@@ -13,8 +13,8 @@ import java.util.Objects;
 public class Student implements Comparable<Student> {
     private String name;
     private int age;
-    static int count = 0;
-    private int hashVal = 0;
+    static int count=0;
+    private int hashVal=0;
 
     @Override
     public String toString() {
@@ -26,7 +26,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int hashCode() {
-        hashVal = Objects.hash(name, age);
+        hashVal= Objects.hash(name,age);
         return hashVal;
     }
 
@@ -42,7 +42,7 @@ public class Student implements Comparable<Student> {
 
     public Student() {
         count++;
-        hashVal = count;
+        hashVal=count;
 
     }
 
@@ -71,6 +71,6 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student o) {
 
-        return this.age % 2 == 0 ? -1 : 1;
+        return  this.age%2==0?-1:1;
     }
 }

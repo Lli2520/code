@@ -44,7 +44,7 @@ public class Dom4JCreateDocument {
         for (Student student : stus) {
             Element studentNode = students.addElement("student");
             studentNode.addComment(student.toString());
-            studentNode.addAttribute("id", student.getId());
+            studentNode.addAttribute("id",student.getId());
             studentNode.addElement("name").setText(student.getName());
             studentNode.addElement("age").setText(String.valueOf(student.getAge()));
         }

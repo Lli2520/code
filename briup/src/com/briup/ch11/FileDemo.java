@@ -89,31 +89,30 @@ public class FileDemo {
 
 
     }
-
     //递归查找指定目录下的所有文件
-    static void listFile(File file) {
-        System.out.println("parentFile:" + file);
+    static  void   listFile(File file){
+        System.out.println("parentFile:"+file);
 //        获取当前目录下的所有文件
         File[] files = file.listFiles();
         for (File file1 : files) {
             //递归
-            if (file1.isDirectory()) {
+            if (file1.isDirectory()){
                 listFile(file1);
-            } else {
-                System.out.println("file:" + file1.getName());
+            }else {
+                System.out.println("file:"+file1.getName());
             }
         }
 
     }
-
     //删除指定目录下的所有文件
-    static void deleteFile(File file) {
+    static void  deleteFile(File file){
         File[] files = file.listFiles();
         for (File file1 : files) {
-            if (file1.isDirectory()) {
+            if (file1.isDirectory()){
                 deleteFile(file1);
                 file1.delete();
-            } else {
+            }
+            else{
                 System.out.println(file1.getAbsolutePath());
                 System.out.println(file1.delete());
             }

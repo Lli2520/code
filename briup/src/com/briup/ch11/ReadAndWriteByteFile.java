@@ -10,17 +10,17 @@ import java.io.IOException;
  * @Author briup-adam
  * @Date 2023/10/19 下午3:03
  * @Description
- * @see FileInputStream  读文件
+ * @see  FileInputStream  读文件
  * @see FileOutputStream  写文件
  **/
 
 public class ReadAndWriteByteFile {
     public static void read() {
         //声明流
-        FileInputStream fis = null;
+        FileInputStream fis=null;
         try {
             //创建流
-            fis = new FileInputStream("01code/src/十年.txt");
+            fis=new FileInputStream("01code/src/十年.txt");
             //使用流
             /**
              * 1. 一个字节一个字节的读
@@ -42,10 +42,10 @@ public class ReadAndWriteByteFile {
 //            }
 
 
-            byte[] b = new byte[80];
+            byte [] b=new byte[80];
             //接收 每一次读到的字节个数
-            int len = 0;
-            while ((len = fis.read(b, 0, b.length)) != -1) {
+            int len=0;
+            while ((len=fis.read(b,0,b.length))!=-1){
                 //使用byte数组构建字符串
                 String s = new String(b, 0, len);
                 System.out.println(s);
@@ -54,7 +54,7 @@ public class ReadAndWriteByteFile {
             e.printStackTrace();
         } finally {
             //关闭流
-            if (fis != null) {
+            if (fis!=null) {
                 try {
                     fis.close();
                 } catch (IOException e) {
@@ -64,18 +64,18 @@ public class ReadAndWriteByteFile {
         }
     }
 
-    public static void write() {
+    public static  void write(){
         String s = "又一个四季在轮回 而我一无所获的坐在街头；理想今年你几岁！";
         //字符串直接转成字节数组
         byte[] b = s.getBytes();
         //声明
-        FileOutputStream fos = null;
+        FileOutputStream fos=null;
         try {
             //创建
             // 如果文件不存在   自动创建文件
             //如果文件已经存在  覆盖之前的内容
             //如果文件已经存在 想追加到文件  使用两参构造器 第二参数设置为true
-            fos = new FileOutputStream("01code/src/10-19.txt", true);
+            fos=new FileOutputStream("01code/src/10-19.txt",true);
             //使用流
             /**
              * 1.一个字节一个字节的写出
@@ -88,13 +88,13 @@ public class ReadAndWriteByteFile {
              */
 //            fos.write(b);
             //写出指定数组的部分字节
-            fos.write(b, 0, b.length / 2);
+            fos.write(b,0,b.length/2);
             //刷新
             fos.flush();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            if (fos != null) {
+        }finally {
+            if (fos!=null){
                 try {
                     fos.close();
                 } catch (IOException e) {
@@ -104,34 +104,33 @@ public class ReadAndWriteByteFile {
         }
 
     }
-
-    public static void readAndWrite() {
+    public static void  readAndWrite(){
         //声明
-        FileInputStream fis = null;
-        FileOutputStream fos = null;
+        FileInputStream fis=null;
+        FileOutputStream fos=null;
         //创建
         try {
-            fis = new FileInputStream("01code/src/1.jpg");
-            fos = new FileOutputStream("01code/src/3.jpg");
+            fis=new FileInputStream("01code/src/1.jpg");
+            fos=new FileOutputStream("01code/src/3.jpg");
             //使用
-            byte[] b = new byte[80];
-            int len = 0;
-            while ((len = fis.read(b)) != -1) {
-                fos.write(b, 0, len);
+            byte [] b=new byte[80];
+            int len=0;
+            while((len=fis.read(b))!=-1){
+                fos.write(b,0,len);
             }
             fos.flush();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
+        }finally {
 
-            if (fis != null) {
+            if (fis!=null) {
                 try {
                     fis.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            if (fos != null) {
+            if (fos!=null) {
                 try {
                     fos.close();
                 } catch (IOException e) {

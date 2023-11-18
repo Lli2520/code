@@ -26,7 +26,7 @@ public class CollectionsDemo {
         Collections.sort(list, new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
-                return o1 % 2 == 0 ? -1 : 1;
+                return o1%2==0?-1:1;
             }
         });
         System.out.println(list);
@@ -36,11 +36,11 @@ public class CollectionsDemo {
         Collections.shuffle(list);
         System.out.println(list);
         //填充
-        Collections.fill(list, 30);
+        Collections.fill(list,30);
         System.out.println(list);
         ArrayList list1 = new ArrayList();
         //直接填充元素
-        Collections.addAll(list1, 45, 1243, 1233);
+        Collections.addAll(list1,45,1243,1233);
         System.out.println(list1);
 
     }

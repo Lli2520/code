@@ -8,10 +8,10 @@ import java.lang.String;
  * @Description
  **/
 
-public class ThreadSub extends Thread {
+public class ThreadSub  extends  Thread{
     @Override
     public void run() {
-        while (true) {
+        while (true){
             System.out.println(1);
         }
     }
@@ -26,7 +26,7 @@ public class ThreadSub extends Thread {
 //        sub.run();
 //        开启新的线程 新线程自己去执行自己的代码
         sub.start();
-        while (true) {
+        while (true){
             System.out.println(2);
 //           System.exit(-1);
         }

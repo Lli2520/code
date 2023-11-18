@@ -19,13 +19,12 @@ public class ReadAndWriteData {
             e.printStackTrace();
         }
     }
+    public  static   void   readData(String path) throws IOException {
+        FileInputStream fis=null;
+        DataInputStream dis=null;
 
-    public static void readData(String path) throws IOException {
-        FileInputStream fis = null;
-        DataInputStream dis = null;
-
-        fis = new FileInputStream(path);
-        dis = new DataInputStream(fis);
+        fis=new FileInputStream(path);
+        dis=new DataInputStream(fis);
 
         System.out.println(dis.readInt());
         System.out.println(dis.readBoolean());
@@ -34,20 +33,19 @@ public class ReadAndWriteData {
         System.out.println(dis.readInt());
 
 
-        if (dis != null)
+        if (dis!=null)
             dis.close();
-        if (fis != null)
+        if (fis!=null)
             fis.close();
 
 
     }
+    public static void  writeData(String path) throws IOException {
+        FileOutputStream fos=null;
+        DataOutputStream dos=null;
 
-    public static void writeData(String path) throws IOException {
-        FileOutputStream fos = null;
-        DataOutputStream dos = null;
-
-        fos = new FileOutputStream(path);
-        dos = new DataOutputStream(fos);
+        fos=new FileOutputStream(path);
+        dos=new DataOutputStream(fos);
 
         dos.writeByte(0);
         dos.writeShort(1);
@@ -60,9 +58,9 @@ public class ReadAndWriteData {
         dos.writeUTF("中国");
 
 
-        if (dos != null)
+        if (dos!=null)
             dos.close();
-        if (fos != null)
+        if(fos!=null)
             fos.close();
     }
 }

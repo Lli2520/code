@@ -14,20 +14,17 @@ import java.util.Collection;
 
 public class GenericClass {
 
-    public void methodA(Collection<String> c) {
+    public void  methodA(Collection<String> c){
 
     }
-
-    public void methodB(Collection<?> c) {
+    public void  methodB(Collection<?> c){
         c.add(null);
 
     }
-
-    public void methodC(Collection<? extends Number> c) {
+    public void  methodC(Collection<? extends  Number> c){
 
     }
-
-    public void methodD(Collection<? super Integer> c) {
+    public void  methodD(Collection<? super  Integer> c){
 
     }
 

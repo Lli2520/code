@@ -1,9 +1,9 @@
 package com.briup.ex;
 
 public class Student {
-    private String id;
-    private String name;
-    private String gender;
+    private  String  id;
+    private String  name;
+    private String  gender;
 
     public String getId() {
         return id;
@@ -37,6 +37,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return id + ' ' + name + ' ' + gender;
+        return  id + ' ' + name + ' ' + gender;
     }
 }

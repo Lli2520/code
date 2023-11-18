@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @Author briup-adam
  * @Date 2023/10/30 下午4:40
- * @Description 获取字节码对象
+ * @Description  获取字节码对象
  **/
 
 public class ClassDemo {
@@ -32,9 +32,9 @@ public class ClassDemo {
             System.out.println(gClass);
             System.out.println(hClass);
 
-            System.out.println(bClass == fClass);//true
-            System.out.println(aClass == int.class);//true
-            System.out.println(cClass == gClass);//true
+            System.out.println(bClass==fClass);//true
+            System.out.println(aClass==int.class);//true
+            System.out.println(cClass==gClass);//true
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

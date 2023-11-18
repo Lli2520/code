@@ -21,7 +21,7 @@ public class LoadFile {
 
             Set<Map.Entry<Object, Object>> entries = p.entrySet();
             for (Map.Entry<Object, Object> entry : entries) {
-                System.out.println(entry.getKey() + "--------" + entry.getValue());
+                System.out.println(entry.getKey()+"--------"+entry.getValue());
             }
         } catch (IOException e) {
             e.printStackTrace();

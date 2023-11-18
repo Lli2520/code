@@ -9,27 +9,23 @@ import java.lang.String;
  **/
 
 public interface ISleep {
-    void sleep();
+    void  sleep();
 }
-
-class SleepImpl implements ISleep {
+class SleepImpl  implements  ISleep{
     @Override
     public void sleep() {
         System.out.println("黑发不知勤学早");
     }
 }
-
-class SleepTest {
+class SleepTest{
     public static void main(String[] args) {
-        ISleep sleep1 = new SleepImpl();
-        ISleep sleep2 = new ISleep() {
-            //            匿名内部类可以定义属性和方法
-            public int a = 10;
-
-            public void methodA() {
+        ISleep sleep1=new SleepImpl();
+        ISleep sleep2=new ISleep(){
+//            匿名内部类可以定义属性和方法
+            public int a=10;
+            public void methodA(){
                 System.out.println("闻鸡起舞");
             }
-
             @Override
             public void sleep() {
                 System.out.println("a = " + a);

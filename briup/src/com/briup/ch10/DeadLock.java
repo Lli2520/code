@@ -5,15 +5,15 @@ import java.lang.String;
 /**
  * @Author briup-adam
  * @Date 2023/10/30 下午2:41
- * @Description 死锁案例
+ * @Description  死锁案例
  **/
 
 public class DeadLock {
 
     public static void main(String[] args) {
         //万能锁  Object.class
-        Object o1 = new Object();
-        Object o2 = new Object();
+        Object o1=new Object();
+        Object o2=new Object();
 
         Thread t1 = new Thread() {
             @Override

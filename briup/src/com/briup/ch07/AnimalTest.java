@@ -23,8 +23,8 @@ public class AnimalTest {
         Animal.methodA();
         System.out.println(Animal.count);
 
-        Animal a1 = new Cat();
-        Animal a2 = new Dog();
+        Animal a1=new Cat();
+        Animal a2=new Dog();
         a1.eat();
         a2.eat();
     }

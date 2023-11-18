@@ -14,7 +14,7 @@ public class LinkedHashSetDemo {
     public static void main(String[] args) {
         //set  无序  不可重复 无索引
         //LinkedHashSet  有序  不可重复 允许null
-        LinkedHashSet set = new LinkedHashSet();
+        LinkedHashSet set=new LinkedHashSet();
         set.add("闫昊");
         set.add("闫昊");
         set.add("杨硕");

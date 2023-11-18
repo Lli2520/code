@@ -18,10 +18,10 @@ public class CompareReadAndWriteTime {
         FileOutputStream fos = null;
         fis = new FileInputStream(src);
         fos = new FileOutputStream(dest);
-        int len = 0;
-        byte[] b = new byte[8];
-        while ((len = fis.read(b)) != -1) {
-            fos.write(b, 0, len);
+        int len=0;
+        byte [] b=new byte[8];
+        while ((len=fis.read(b))!=-1){
+            fos.write(b,0,len);
         }
         fos.flush();
 
@@ -31,44 +31,43 @@ public class CompareReadAndWriteTime {
             fos.close();
         long end = System.currentTimeMillis();
 
-        System.out.println("节点流耗费时间" + (end - start));
+        System.out.println("节点流耗费时间"+(end-start));
     }
-
-    public static void bufferedStream(String src, String dest) throws Exception {
+    public static  void  bufferedStream(String  src,String dest) throws Exception {
         long satrt = System.currentTimeMillis();
         //声明
-        BufferedInputStream bis = null;
-        BufferedOutputStream bos = null;
-        FileInputStream fis = null;
-        FileOutputStream fos = null;
-        fis = new FileInputStream(src);
-        fos = new FileOutputStream(dest);
+        BufferedInputStream bis=null;
+        BufferedOutputStream bos=null;
+        FileInputStream fis=null;
+        FileOutputStream fos=null;
+        fis=new FileInputStream(src);
+        fos=new FileOutputStream(dest);
 
-        bis = new BufferedInputStream(fis);
-        bos = new BufferedOutputStream(fos);
-        int len = 0;
-        byte[] b = new byte[8];
-        while ((len = bis.read(b)) != -1) {
-            bos.write(b, 0, len);
+        bis=new BufferedInputStream(fis);
+        bos=new BufferedOutputStream(fos);
+        int len=0;
+        byte [] b=new byte[8];
+        while ((len=bis.read(b))!=-1){
+            bos.write(b,0,len);
         }
         bos.flush();
 
-        if (bis != null)
+        if (bis!=null)
             bis.close();
-        if (bos != null)
+        if (bos!=null)
             bos.close();
-        if (fis != null)
+        if (fis!=null)
             fis.close();
-        if (fos != null)
+        if (fos!=null)
             fos.close();
         long end = System.currentTimeMillis();
-        System.out.println("包装流耗时" + (end - satrt));
+        System.out.println("包装流耗时"+(end-satrt));
     }
 
     public static void main(String[] args) {
         try {
-            nodeStream("01code/src/十年.txt", "10-23.txt");
-            bufferedStream("01code/src/十年.txt", "10-23.txt");
+            nodeStream("01code/src/十年.txt","10-23.txt");
+            bufferedStream("01code/src/十年.txt","10-23.txt");
         } catch (Exception e) {
             e.printStackTrace();
         }

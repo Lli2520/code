@@ -5,17 +5,17 @@ import java.io.Serializable;
 /**
  * @Author briup-adam
  * @Date 2023/10/30 下午4:53
- * @Description 只供反射 测试使用
+ * @Description  只供反射 测试使用
  **/
 
 public class Dog implements Serializable {
     static final long serialVersionUID = 42L;
-    private String name;
-    int age;
-    protected char gender;
-    public String color;
+    private  String  name;
+    int  age;
+    protected  char  gender;
+    public  String color;
 
-    static void show(String text) {
+    static  void  show(String text){
         System.out.println(text);
     }
 
@@ -27,7 +27,7 @@ public class Dog implements Serializable {
         return age;
     }
 
-    char getGender() {
+     char getGender() {
         return gender;
     }
 
@@ -48,12 +48,12 @@ public class Dog implements Serializable {
         this.gender = gender;
     }
 
-    Dog(String name, int age) {
+     Dog(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    private Dog(String name) {
+    private  Dog(String name) {
         this.name = name;
     }
 
@@ -67,6 +67,5 @@ public class Dog implements Serializable {
                 '}';
     }
 
-    public Dog() {
-    }
+    public  Dog(){}
 }

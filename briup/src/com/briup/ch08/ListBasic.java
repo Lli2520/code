@@ -42,13 +42,13 @@ public class ListBasic {
             System.out.println(o);
         }
         //将集合中所有元素放到指定位置
-        list.addAll(2, list);
+        list.addAll(2,list);
         System.out.println(list);
         //移除指定位置上的值
         list.remove(0);
         int index = list.indexOf("赵栋");
         System.out.println(index);
-        index = list.lastIndexOf("赵栋");
+        index=list.lastIndexOf("赵栋");
         System.out.println(index);
         System.out.println(list);
         //[formIndex,toIndex)

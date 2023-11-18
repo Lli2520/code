@@ -9,61 +9,58 @@ import java.lang.String;
  **/
 
 public class FinallyTest {
-    public static void methodA() {
+    public static void  methodA(){
         int a;
         try {
-            a = 10;
-        } catch (Exception e) {
-            a = 12;
-        } finally {
-            a = 13;
+            a=10;
+        }catch (Exception e){
+            a=12;
+        }finally {
+            a=13;
         }
         System.out.println(a);
     }
-
-    public static int methodB() {
+    public static int  methodB(){
         int a;
         try {
-            a = 10;
-        } catch (Exception e) {
-            a = 12;
-        } finally {
-            a = 13;
+            a=10;
+        }catch (Exception e){
+            a=12;
+        }finally {
+            a=13;
         }
-        return a;
+        return  a;
     }
 
-    public static int methodC() {
+    public static int  methodC(){
         int a;
         try {
-            a = 10;
-            return a;
-        } catch (Exception e) {
-            a = 12;
-            return a;
-        } finally {
-            a = 13;
+            a=10;
+            return  a;
+        }catch (Exception e){
+            a=12;
+            return  a;
+        }finally {
+            a=13;
             return a;
         }
 
     }
-
-    public static int methodD() {
+    public static int  methodD(){
         int a;
         try {
-            a = 10;
-            return a;
-        } catch (Exception e) {
-            a = 12;
-            return a;
-        } finally {
-            a = 13;
+            a=10;
+            return  a;
+        }catch (Exception e){
+            a=12;
+            return  a;
+        }finally {
+            a=13;
             System.out.println(a);
             System.out.println("finally code  block");
         }
 
     }
-
     public static void main(String[] args) {
         methodA();//13
         System.out.println(methodB());//13

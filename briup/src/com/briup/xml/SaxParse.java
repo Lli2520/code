@@ -35,10 +35,10 @@ public class SaxParse {
                         for (int i = 0; i < attributes.getLength(); i++) {
                             String name = attributes.getLocalName(i);
                             String value = attributes.getValue(i);
-                            sb.append(name + ":" + value + ",");
+                            sb.append(name+":"+value+",");
                         }
-                        sb = new StringBuilder(sb.substring(0, sb.length() - 1));
-                        sb.append("]");
+                        sb= new StringBuilder(sb.substring(0, sb.length() - 1));
+                        sb.append("]") ;
                     }
                     System.out.println(sb);
                 }

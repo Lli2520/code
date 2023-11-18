@@ -9,7 +9,7 @@ import java.lang.String;
  **/
 
 public interface IRideAble {
-    String VERSION = "1.0";
+    String VERSION="1.0";
 
     void ride();
 }

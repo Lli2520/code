@@ -6,7 +6,7 @@ package com.briup.ch07;
  * @Description
  **/
 
-public class Cat extends Animal {
+public class Cat  extends  Animal{
 
     public void eat() {
         System.out.println("猫吃鱼");
@@ -18,7 +18,7 @@ public class Cat extends Animal {
 
     }
 
-    public Cat() {
+    public Cat(){
         super();
     }
 }

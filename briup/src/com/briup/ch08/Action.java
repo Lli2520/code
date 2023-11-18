@@ -9,13 +9,12 @@ import java.lang.String;
  **/
 
 public interface Action<T> {
-    void print(T t);
-
-    T getValue();
+     void  print(T t);
+     T getValue();
 
     public static void main(String[] args) {
-        Action<Integer> a = new ActionImpl<>();
-        Action<String> action = new Action<String>() {
+        Action<Integer> a=new ActionImpl<>();
+        Action<String> action =new Action<String>() {
             @Override
             public void print(String s) {
                 System.out.println(s);
@@ -33,8 +32,7 @@ public interface Action<T> {
 
     }
 }
-
-class ActionImpl<T> implements Action<T> {
+class  ActionImpl<T>  implements  Action<T>{
 
     @Override
     public void print(T t) {
@@ -45,8 +43,7 @@ class ActionImpl<T> implements Action<T> {
     public T getValue() {
         return null;
     }
-
-    public static <E> void show(E e) {
+    public static <E>   void show(E e){
         System.out.println(e.getClass());
     }
 }

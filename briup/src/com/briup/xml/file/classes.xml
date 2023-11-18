@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 <class>
-    <student id="1" born_date="2002/01/01">
+    <student id="1"  born_date="2002/01/01">
         <name>撒哈拉小公主</name>
         <age>18</age>
     </student>

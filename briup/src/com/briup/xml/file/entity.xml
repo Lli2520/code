@@ -7,6 +7,6 @@
 
     <printMsg 出题人='Andy&apos;Q'>请求出23^34&amp;1&lt;24>>2</printMsg>
     <show>&company;</show>
-    <show>在xml中&amp;不能直接输出 需要使用预定义实体来输出 预定义实体的写法应该是<![CDATA[&amp;]]></show>
+    <show>在xml中&amp;不能直接输出  需要使用预定义实体来输出  预定义实体的写法应该是<![CDATA[&amp;]]></show>
     <![CDATA[&ls;,.,.<><><><><><><]]>
 </entities>

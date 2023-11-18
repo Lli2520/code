@@ -11,7 +11,7 @@ import java.io.*;
  **/
 
 public class RandomAccessFileDemo {
-    public static void replace(String path) {
+    public static  void   replace(String path){
         File file = new File(path);
         RandomAccessFile rw = null;
         ByteArrayOutputStream baos = null;
@@ -40,7 +40,7 @@ public class RandomAccessFileDemo {
                     e.printStackTrace();
                 }
             }
-            if (baos != null) {
+            if (baos!=null) {
                 try {
                     baos.close();
                 } catch (IOException e) {
@@ -49,11 +49,10 @@ public class RandomAccessFileDemo {
             }
         }
     }
-
-    public static void insert(String path, int pos) throws Exception {
+    public static   void  insert(String path,int pos) throws Exception {
         File file = new File(path);
         RandomAccessFile rw = new RandomAccessFile(file, "rw");
-        byte[] insertVal = "adam".getBytes();
+        byte [] insertVal = "adam".getBytes();
         //先跳过制定字节数
         rw.seek(pos);
         byte[] b = new byte[(int) (file.length() - pos)];
@@ -63,10 +62,9 @@ public class RandomAccessFileDemo {
         rw.write(b);
         rw.close();
     }
-
     public static void main(String[] args) {
         try {
-            insert("01code/src/file.txt", 6);
+            insert("01code/src/file.txt",6);
         } catch (Exception e) {
             e.printStackTrace();
         }

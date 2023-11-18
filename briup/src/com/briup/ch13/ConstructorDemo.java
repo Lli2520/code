@@ -6,7 +6,7 @@ import java.lang.reflect.Modifier;
 /**
  * @Author briup-adam
  * @Date 2023/10/30 下午4:53
- * @Description 通过反射获取构造器
+ * @Description  通过反射获取构造器
  **/
 
 public class ConstructorDemo {
@@ -42,7 +42,7 @@ public class ConstructorDemo {
             System.out.println(i);
             boolean b = Modifier.isPrivate(i);
             System.out.println(b);
-            //获取构造器的参数个数
+        //获取构造器的参数个数
             int count = constructor.getParameterCount();
             System.out.println(count);
             Class<?>[] parameterTypes = constructor.getParameterTypes();

@@ -9,8 +9,7 @@ package com.briup.ch08;
 @Demo(name = "测试注解的类")
 public class AnnotationDemo {
 }
-
 //@Demo(name = "测试注解的类")
-class SubAnnotationDemo {
+class SubAnnotationDemo{
 
 }

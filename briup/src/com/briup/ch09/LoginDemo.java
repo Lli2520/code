@@ -9,13 +9,13 @@ import java.lang.String;
  **/
 
 public class LoginDemo {
-    public static String login(String name, String password) throws LoginException {
-        if (!"briup".equals(name)) {
+    public  static String login(String name, String password) throws LoginException {
+        if (!"briup".equals(name)){
             throw new LoginException("用户名不存在");
-        } else if (!"briup".equals(password)) {
-            throw new LoginException("密码错误");
-        } else {
-            return "登录成功；欢迎用户 briup";
+        }else if (!"briup".equals(password)){
+            throw new  LoginException("密码错误");
+        }else{
+            return  "登录成功；欢迎用户 briup";
         }
 
     }
@@ -25,7 +25,7 @@ public class LoginDemo {
             String s = login("briup", "briup");
             System.out.println(s);
         } catch (LoginException e) {
-            System.out.println("登录失败：" + e.getMessage());
+            System.out.println("登录失败："+e.getMessage());
         }
 
     }

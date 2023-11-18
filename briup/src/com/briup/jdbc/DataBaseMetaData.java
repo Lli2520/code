@@ -35,15 +35,15 @@ public class DataBaseMetaData {
             //获取结果集一共多少个列
             int count = metaData1.getColumnCount();
             //处理结果集
-            while (tables.next()) {
+            while(tables.next()) {
                 //获取结果集的每一个列
-                for (int i = 1; i <= count; i++) {
+                for (int i = 1; i <=count ; i++) {
                     //获取结果集中的列的名字
                     String name = metaData1.getColumnName(i);
                     //获取结果集中的列的类型
                     int type = metaData1.getColumnType(i);
                     String val = tables.getString(name);
-                    System.out.println(name + ":" + val);
+                    System.out.println(name+":"+val);
                 }
 
             }

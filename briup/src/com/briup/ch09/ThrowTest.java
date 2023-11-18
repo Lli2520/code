@@ -11,16 +11,16 @@ import java.util.Scanner;
  **/
 
 public class ThrowTest {
-    public static void login(String name, String password) throws Exception {
-        if (!name.equals("root")) {
+    public static  void  login(String name, String password)throws  Exception{
+        if(!name.equals("root")){
 //            抛出运行时异常  编译器没有任何提示
 //            throw  new RuntimeException("用户名不存在");
 //            抛出编译时期异常 编译 报错
-            throw new Exception("用户名不存在");
-        } else if (!password.equals("briup")) {
+            throw  new Exception("用户名不存在");
+        }else if(!password.equals("briup")){
 //            throw new  RuntimeException("用户名密码错误");
-            throw new Exception("用户名密码错误");
-        } else {
+            throw new  Exception("用户名密码错误");
+        }else {
             System.out.println("登录成功");
         }
 
@@ -33,7 +33,7 @@ public class ThrowTest {
         System.out.println("请输入密码：");
         String password = scanner.next();
         try {
-            login(name, password);
+            login(name,password);
             System.out.println("登录结束");
         } catch (Exception e) {
             e.printStackTrace();
@@ -41,6 +41,7 @@ public class ThrowTest {
         }
         System.out.println("☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺");
     }
+
 
 
 }

@@ -10,7 +10,7 @@ import java.lang.String;
 
 public class ShapeTest {
     public static void main(String[] args) {
-        Shape s1 = new Circle("圆形", 5);
+        Shape s1=new Circle("圆形",5);
         System.out.println(s1.getArea());
     }
 }

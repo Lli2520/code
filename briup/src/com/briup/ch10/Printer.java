@@ -67,7 +67,7 @@ public class Printer {
         Thread t3 = new Thread() {
             @Override
             public void run() {
-                for (int i = 0; i < 50; i++) {
+                for (int i = 0; i <50 ; i++) {
                     Printer.print3();
                 }
 
@@ -76,7 +76,7 @@ public class Printer {
         Thread t4 = new Thread() {
             @Override
             public void run() {
-                for (int i = 0; i < 50; i++) {
+                for (int i = 0; i <50 ; i++) {
                     Printer.print4();
                 }
             }

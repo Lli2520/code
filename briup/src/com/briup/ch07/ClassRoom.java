@@ -11,8 +11,8 @@ import java.util.Arrays;
  **/
 
 public class ClassRoom {
-    private Teacher teacher;
-    private Stu[] stus;
+    private Teacher  teacher;
+    private Stu[]  stus;
 
     public ClassRoom(Teacher teacher, Stu[] stus) {
         this.teacher = teacher;
@@ -29,16 +29,15 @@ public class ClassRoom {
 
     public static void main(String[] args) {
         Teacher tom = new Teacher("tom", 2000, Gender.MALE);
-        Stu[] stus = {new Stu("闫昊", 18), new Stu("杨硕", 20)};
+        Stu [] stus={new Stu("闫昊",18),new Stu("杨硕",20)};
         ClassRoom classRoom = new ClassRoom(tom, stus);
         System.out.println(classRoom);
     }
 }
-
-class Teacher {
+class Teacher{
     private String name;
     private int salary;
-    private Gender gender;
+    private  Gender gender;
 
     @Override
     public String toString() {

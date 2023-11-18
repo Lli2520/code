@@ -10,7 +10,7 @@ import java.io.Serializable;
  * @Description
  **/
 
-public class Student implements Serializable {
+public class Student  implements Serializable {
     static final long serialVersionUID = 1L;
     private String name;
     private int age;

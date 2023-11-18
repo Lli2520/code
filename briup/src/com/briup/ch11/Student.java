@@ -7,19 +7,20 @@ import java.io.Serializable;
 /**
  * @Author briup-adam
  * @Date 2023/10/23 上午11:19
- * @Description 对象要想序列化 对应的类必须实现可序列化接口
- * @see Serializable
+ * @Description  对象要想序列化 对应的类必须实现可序列化接口
+ * @see  Serializable
+ *
  **/
 
 public class Student implements Serializable {
     //序列化版本号
-    static final long serialVersionUID = -2704430391940309448l;
-    private String name;
-    private int age;
+    static final long serialVersionUID= -2704430391940309448l;
+    private String name ;
+    private  int age;
     //transient 修饰属性  被修饰的属性不参与序列化
-    transient private String password;
-    private String gender;
-    private String address;
+   transient private String password;
+   private String  gender;
+   private  String  address;
 
     public String getAddress() {
         return address;

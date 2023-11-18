@@ -7,5 +7,5 @@ package com.briup.ch07;
  **/
 
 public interface Flyable {
-    void fly();
+    void  fly();
 }

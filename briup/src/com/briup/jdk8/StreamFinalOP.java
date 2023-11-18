@@ -13,7 +13,8 @@ public class StreamFinalOP {
         Stream<String> stream = Stream.of("果渣", "果冻", "果干", "果树", "果皮", "果盘", "果汁", "果粒");
         //获取Stream的迭代器
         Iterator<String> iterator = stream.iterator();
-        while (iterator.hasNext()) {
+        while (iterator.hasNext())
+        {
             System.out.println(iterator.next());
         }
         //Foreach

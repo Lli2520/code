@@ -14,7 +14,7 @@ import java.util.Set;
 
 public class SetBasic {
     public static void main(String[] args) {
-        Set set = new HashSet();
+        Set set=new HashSet();
         set.add("闫昊");
         set.add("闫昊");
         set.add("赵栋");
@@ -32,19 +32,19 @@ public class SetBasic {
         }
         //  set集合的遍历  迭代器
         Iterator iterator = set.iterator();
-        while (iterator.hasNext()) {
+        while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
         //set集合遍历不能使用普通for
         set.add(null);
         set.add(null);
         System.out.println(set);
-        Set set1 = new HashSet();
+        Set set1=new HashSet();
         //hashset判断元素是否可以插入  先看对象的hash值 如果相同再通过equals比较
-        set1.add(new Student("李想", 19));
-        set1.add(new Student("郭琴", 19));
-        set1.add(new Student("李丹", 19));
-        set1.add(new Student("谢盼盼", 19));
+        set1.add(new Student("李想",19));
+        set1.add(new Student("郭琴",19));
+        set1.add(new Student("李丹",19));
+        set1.add(new Student("谢盼盼",19));
         System.out.println(set1.size());//4
         for (Object o : set1) {
             System.out.println(o);

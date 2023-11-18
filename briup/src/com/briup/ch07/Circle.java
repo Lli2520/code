@@ -8,7 +8,7 @@ import java.lang.String;
  * @Description
  **/
 
-public class Circle extends Shape {
+public class Circle extends  Shape{
     private int r;
 
     public Circle(String name, int r) {
@@ -33,6 +33,6 @@ public class Circle extends Shape {
 
     @Override
     public double getArea() {
-        return Math.PI * r * r;
+        return Math.PI*r*r;
     }
 }

@@ -7,5 +7,5 @@ package com.briup.ch07;
  **/
 
 public interface Runnable {
-    void run();
+    void  run();
 }

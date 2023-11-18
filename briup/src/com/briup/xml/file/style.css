@@ -1,10 +1,9 @@
-name {
+name{
     font-size: 40px;
     background-color: #85c021c1;
     color: #fff;
 }
-
-age {
+age{
     text-decoration: line-through;
     color: darkred;
     background-color: #ffbf00;
@@ -13,11 +12,10 @@ age {
     margin-left: 800px;
     padding: 10px 18px;
     border-radius: 15px;
-    border: 3px black solid;
+    border:  3px black solid;
 
 }
-
-student {
+student{
     display: block;
     margin: 20px;
     padding: 20px 50px;

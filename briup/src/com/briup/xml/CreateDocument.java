@@ -20,9 +20,9 @@ public class CreateDocument {
         //构建工厂
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
-            //构建解析器对象
+        //构建解析器对象
             DocumentBuilder builder = factory.newDocumentBuilder();
-            //构建文档对象
+        //构建文档对象
             Document document = builder.newDocument();
             //通过文档兑现构建元素节点
             Element game = document.createElement("game");
@@ -56,10 +56,10 @@ public class CreateDocument {
             Transformer transformer = transformerFactory.newTransformer();
             //转换器设置转换属性
 //            transformer.setOutputProperty(OutputKeys.ENCODING,"UTF-8");
-            transformer.setOutputProperty("encoding", "UTF-8");
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.setOutputProperty("encoding","UTF-8");
+            transformer.setOutputProperty(OutputKeys.INDENT,"yes");
             //将Docuemnt对象转换成xml文档
-            transformer.transform(new DOMSource(document), new StreamResult(new PrintWriter("C:\\Users\\sxx\\IdeaProjects\\bttc-java-basic-code\\01code\\src\\com\\briup\\xml\\file\\game.xml")));
+            transformer.transform(new DOMSource(document),new StreamResult(new PrintWriter("C:\\Users\\sxx\\IdeaProjects\\bttc-java-basic-code\\01code\\src\\com\\briup\\xml\\file\\game.xml")));
 
 
         } catch (Exception e) {

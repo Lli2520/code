@@ -7,5 +7,5 @@ package com.briup.ch07;
  **/
 
 public interface IJumpAble {
-    void jump();
+    void  jump();
 }

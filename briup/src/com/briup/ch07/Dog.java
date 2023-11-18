@@ -6,7 +6,7 @@ package com.briup.ch07;
  * @Description
  **/
 
-public class Dog extends Animal {
+public class Dog  extends  Animal {
     @Override
     public void eat() {
         System.out.println("狗吃肉");

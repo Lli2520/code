@@ -1,7 +1,7 @@
 package com.briup.jdbc;
 
 public class Emp {
-    private int id;
+    private   int id;
     private String name;
     private int salary;
     private String title;

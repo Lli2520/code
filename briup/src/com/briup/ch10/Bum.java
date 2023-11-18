@@ -58,9 +58,9 @@ class Customer extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < 100; i++) {
-            synchronized (bum) {
-                if (!bum.flag) {
+        for (int i = 0; i <100 ; i++) {
+            synchronized (bum){
+                if (!bum.flag){
                     try {
                         bum.wait();
                     } catch (InterruptedException e) {
@@ -70,7 +70,7 @@ class Customer extends Thread {
                 System.out.println("第" + i + "次，" + this.getName() + " 开始吃包子...");
                 bum.num--;
                 System.out.println("消费完成，包子数量: " + bum.num + "，快生产吧!");
-                bum.flag = false;
+                bum.flag=false;
                 //唤醒生产者线程
                 bum.notify();
             }
@@ -78,8 +78,7 @@ class Customer extends Thread {
         }
     }
 }
-
-class TwoCommunication {
+class TwoCommunication{
     public static void main(String[] args) {
         Bum bum = new Bum();
         Producer producer = new Producer("狗不理", bum);

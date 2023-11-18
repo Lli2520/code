@@ -19,32 +19,32 @@ import java.util.Scanner;
 public class TcpServerDemo3 {
     public static void main(String[] args) {
         try {
-            Scanner scanner = new Scanner(System.in);
+            Scanner scanner=new Scanner(System.in);
             ServerSocket server = new ServerSocket(10111);
-            while (true) {
+            while (true){
                 Socket socket = server.accept();
 
-                BufferedReader br = null;
-                InputStreamReader isr = null;
-                PrintWriter pw = null;
-                isr = new InputStreamReader(socket.getInputStream());
-                br = new BufferedReader(isr);
-                pw = new PrintWriter(socket.getOutputStream(), true);
+                BufferedReader br=null;
+                InputStreamReader isr=null;
+                PrintWriter pw=null;
+                isr=new InputStreamReader(socket.getInputStream());
+                br=new BufferedReader(isr);
+                pw=new PrintWriter(socket.getOutputStream(),true);
 
                 String address = socket.getInetAddress().toString();
                 System.out.println(address);
-                while (true) {
+                while (true){
                     String line = br.readLine();
-                    System.err.println(address + ":" + line);
-                    if (line.equals("bye")) {
+                    System.err.println(address+":"+line);
+                    if (line.equals("bye")){
                         break;
                     }
                     //获取用户输入
                     String msg = scanner.next();
                     pw.println(msg);
                     pw.flush();
-                    System.out.println("我：" + msg);
-                    if (msg.equals("bye")) {
+                    System.out.println("我："+msg);
+                    if (msg.equals("bye")){
                         break;
                     }
 

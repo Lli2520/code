@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <game slogan="5v5 公平竞技">
-    <!--王者荣耀于23年托管到第三方公司 不再由腾讯天美工作室运营-->
-    <name>王者荣耀</name>
-    <player1>谁动了闫昊的野猪</player1>
-    <player2>王凯爱偷野猪</player2>
+<!--王者荣耀于23年托管到第三方公司 不再由腾讯天美工作室运营-->
+<name>王者荣耀</name>
+<player1>谁动了闫昊的野猪</player1>
+<player2>王凯爱偷野猪</player2>
 </game>

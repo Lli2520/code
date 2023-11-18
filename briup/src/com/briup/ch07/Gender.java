@@ -16,12 +16,12 @@ public enum Gender implements IJumpAble {
 
     //枚举元素  实际上就是枚举类型的对象 且是公共静态常量
 //    枚举元素 必须写在枚举类型的第一行 如果枚举元素之后没有任何代码 枚举元素声明完可以不写分号  但是如果后面还有代码 必须写分号
-    MALE {
+    MALE{
         @Override
         public void jump() {
 
         }
-    }, FEMALE("女人") {
+    }, FEMALE("女人"){
         @Override
         public void jump() {
 

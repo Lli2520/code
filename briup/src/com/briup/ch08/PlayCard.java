@@ -26,9 +26,9 @@ public class PlayCard {
                 cards.add(card);
             }
         }
-        cards.add(new Card("大", "🤡", 15));
-        cards.add(new Card("小", "🤡", 14));
-    }
+        cards.add(new Card("大","🤡",15));
+        cards.add(new Card("小","🤡",14));
+}
 
     //洗牌
     public static void shuffle() {

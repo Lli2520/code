@@ -9,7 +9,7 @@ import java.util.List;
  * document对象和字符串的双向转换
  */
 public class DocumentToString {
-    static void documentToString() {
+    static void documentToString(){
         //使用帮助类构建文档对象
         Document document = DocumentHelper.createDocument();
         //也可以使用帮助类创建其他元素
@@ -39,27 +39,25 @@ public class DocumentToString {
         for (Student student : stus) {
             Element studentNode = students.addElement("student");
             studentNode.addComment(student.toString());
-            studentNode.addAttribute("id", student.getId());
+            studentNode.addAttribute("id",student.getId());
             studentNode.addElement("name").setText(student.getName());
             studentNode.addElement("age").setText(String.valueOf(student.getAge()));
         }
         String s = document.asXML();
         System.out.println(s);
     }
-
     static void stringToDocument() throws DocumentException {
-        String s = "<root><a>hello</a></root>";
+        String s="<root><a>hello</a></root>";
         Document document = DocumentHelper.parseText(s);
         Element root = document.getRootElement();
         System.out.println(root.getName());
         List<Element> list = root.elements();
         for (Element element : list) {
-            System.out.println(element.getName() + "---" + element.getTextTrim());
+            System.out.println(element.getName()+"---"+element.getTextTrim());
         }
 
 
     }
-
     public static void main(String[] args) {
         documentToString();
         try {

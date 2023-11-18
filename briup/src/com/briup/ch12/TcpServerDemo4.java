@@ -18,9 +18,9 @@ public class TcpServerDemo4 {
     public static void main(String[] args) {
         try {
             ServerSocket server = new ServerSocket(9088);
-            while (true) {
+            while (true){
                 Socket socket = server.accept();
-                ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
+                ObjectInputStream ois=new ObjectInputStream(socket.getInputStream());
                 List<Student> list = (List<Student>) ois.readObject();
                 System.out.println(list);
                 socket.shutdownInput();

@@ -4,6 +4,7 @@ import oracle.jdbc.driver.OracleDriver;
 
 /**
  * 注册驱动   实际上是要驱动类加载到jvm 才能被注册到驱动管理器
+ *
  */
 
 public class RegisterDriver {

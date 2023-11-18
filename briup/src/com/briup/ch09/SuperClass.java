@@ -9,14 +9,13 @@ import java.io.IOException;
  **/
 
 public class SuperClass {
-    public void methodA() throws Exception {
+    public void  methodA() throws  Exception{
 
     }
 }
-
-class SubClass extends SuperClass {
+class SubClass extends  SuperClass{
     @Override
-    public void methodA() throws IOException {
+    public void  methodA()throws IOException {
 
     }
 }

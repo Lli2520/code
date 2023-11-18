@@ -13,7 +13,7 @@ import java.io.*;
 public class ReadAndWriteObject {
 
     public static void main(String[] args) {
-        Student stu = new Student("闫昊", 20, "123456");
+        Student stu = new Student("闫昊", 20,"123456");
         try {
             writeObject(stu, "01code/src/stu.txt");
             Object o = readObject("01code/src/stu.txt");

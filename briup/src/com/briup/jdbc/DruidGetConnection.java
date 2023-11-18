@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.util.Properties;
 
 public class DruidGetConnection {
-    public static Properties loadProperties() {
+    public  static Properties loadProperties(){
         Properties p = new Properties();
         //使用类加载器 加载本地文件 并作为stream
         InputStream stream = DruidGetConnection.class.getClassLoader().getResourceAsStream("druid.properties");
@@ -21,7 +21,7 @@ public class DruidGetConnection {
         return p;
     }
 
-    public static Connection getConnection() throws Exception {
+    public  static  Connection getConnection() throws Exception {
         //创建数据连接池
         DataSource dataSource = DruidDataSourceFactory.createDataSource(loadProperties());
         //通过连接池获取 链接对象

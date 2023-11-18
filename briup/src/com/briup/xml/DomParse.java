@@ -39,31 +39,32 @@ public class DomParse {
                 String id = idAtt.getNodeValue();
                 //获取Stu的所有子节点
                 NodeList childNodes = stuNode.getChildNodes();
-                String name = "";
-                int age = 0;
+                String name="";
+                int age=0;
                 //遍历stu的子节点
                 for (int j = 0; j < childNodes.getLength(); j++) {
                     //获取其中子节点
                     Node node = childNodes.item(j);
                     String nodeName = node.getNodeName();
-                    switch (nodeName) {
+                    switch (nodeName){
                         case "name":
                             //获取节点的文本内容
-                            name = node.getTextContent();
+                            name=node.getTextContent();
                             break;
                         case "age":
-                            age = Integer.parseInt(node.getTextContent());
+                            age=Integer.parseInt(node.getTextContent());
                             break;
                     }
                 }
-                Student student = new Student(id, name, age);
+                Student student = new Student(id,name,age);
                 list.add(student);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            list.forEach(i -> System.out.println(i));
+        }
+        finally {
+            list.forEach(i-> System.out.println(i));
 //            list.forEach(System.out::println);
         }
     }

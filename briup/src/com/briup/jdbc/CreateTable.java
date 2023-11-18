@@ -40,7 +40,7 @@ public class CreateTable {
             try {
                 if (connection != null)
                     connection.close();
-                if (statement != null)
+                if (statement!=null)
                     statement.close();
             } catch (SQLException e) {
                 e.printStackTrace();

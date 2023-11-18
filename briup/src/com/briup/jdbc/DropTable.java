@@ -20,7 +20,7 @@ public class DropTable {
             //创建statement对象
             statement = connection.createStatement();
             //执行sql
-            String sql = "drop table team";
+            String sql="drop table team";
             boolean b = statement.execute(sql);
             //处理结果集 b 为true 说明执行的是 select
             System.out.println(b);
@@ -30,7 +30,7 @@ public class DropTable {
             try {
                 if (connection != null)
                     connection.close();
-                if (statement != null)
+                if (statement!=null)
                     statement.close();
             } catch (SQLException e) {
                 e.printStackTrace();

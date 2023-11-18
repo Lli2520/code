@@ -10,15 +10,15 @@ import java.lang.String;
 
 public class JoinTest {
     public static void main(String[] args) {
-        Thread t1 = new Thread() {
+        Thread t1=new Thread(){
             @Override
             public void run() {
-                for (int i = 0; i < 26; i++) {
+                for (int i = 0; i <26; i++) {
                     System.out.println(i);
                 }
             }
         };
-        Thread t2 = new Thread(new Runnable() {
+        Thread t2=new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -26,7 +26,7 @@ public class JoinTest {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                for (char i = 97; i < 123; i++) {
+                for (char i = 97; i <123 ; i++) {
 
                     System.out.println(i);
                 }
@@ -41,7 +41,7 @@ public class JoinTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        for (char i = 65; i < 91; i++) {
+        for (char i = 65; i <91 ; i++) {
             System.out.println(i);
         }
     }

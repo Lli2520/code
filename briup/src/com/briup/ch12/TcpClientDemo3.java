@@ -21,19 +21,19 @@ public class TcpClientDemo3 {
             Scanner scanner = new Scanner(System.in);
             Socket socket = new Socket("10.138.124.21", 10111);
             System.out.println("已连接到服务器 请开始聊天 若需要结束聊天 请输入 bye ");
-            InputStreamReader isr = new InputStreamReader(socket.getInputStream());
-            BufferedReader br = new BufferedReader(isr);
-            PrintWriter pw = new PrintWriter(socket.getOutputStream());
+            InputStreamReader isr=new InputStreamReader(socket.getInputStream());
+            BufferedReader br=new BufferedReader(isr);
+            PrintWriter pw=new PrintWriter(socket.getOutputStream());
 
-            while (true) {
+            while (true){
                 String msg = scanner.next();
                 pw.println(msg);
                 pw.flush();
-                System.out.println("我：" + msg);
+                System.out.println("我："+msg);
                 if (msg.equals("bye"))
                     break;
                 String line = br.readLine();
-                System.out.println(socket.getInetAddress().toString() + ":" + line);
+                System.out.println(socket.getInetAddress().toString()+":"+line);
                 if (line.equals("bye"))
                     break;
 

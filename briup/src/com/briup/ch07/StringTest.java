@@ -42,7 +42,7 @@ public class StringTest {
         }
         char[] chars = s10.toCharArray();
         System.out.println(Arrays.toString(chars));
-        String s11 = "hi my name is lixaing";
+        String s11="hi my name is lixaing";
         String[] split = s11.split("[ ]");
         System.out.println(Arrays.toString(split));
 //        s11.split("\\ ");

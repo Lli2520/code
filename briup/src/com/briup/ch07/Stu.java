@@ -11,7 +11,7 @@ import java.lang.String;
 
 public class Stu {
     private String name;
-    private int age;
+    private  int age;
 
     @Override
     public String toString() {
@@ -48,13 +48,13 @@ public class Stu {
 
     @Override
     public boolean equals(Object o) {
-        if (o instanceof Stu) {
-            Stu stu = (Stu) o;
+        if(o instanceof  Stu){
+            Stu stu= (Stu) o;
             //比较两个学生的名字是否一致 如果相同返回true
-            return this.name.equals(stu.name) ? true : false;
-        } else {
+            return this.name.equals(stu.name)?true:false;
+        }else{
 
-            return false;
+            return  false;
         }
 
     }
@@ -64,8 +64,7 @@ public class Stu {
         return age;
     }
 }
-
-class StuTest {
+class StuTest{
 
     public static void main(String[] args) {
         Stu stu1 = new Stu("闫昊", 20);

@@ -40,14 +40,14 @@ public class CollectionBasic {
 //        将集合转成数组
         Object[] array = c.toArray();
         System.out.println(Arrays.toString(array));
-        int[] a = {1, 2, 3, 4, 5};
+        int [] a={1,2,3,4,5};
 //        将数组转集合
         Arrays.asList(a);
-        Arrays.asList(1, 2, 3, 4, 5, 7, 8);
+        Arrays.asList(1,2,3,4,5,7,8);
 //        清空集合
         c.clear();
         System.out.println(c.isEmpty());
-        Collection c1 = new ArrayList();
+        Collection c1= new ArrayList();
         for (int i = 0; i < 10; i++) {
             c1.add(i);
         }
@@ -64,11 +64,11 @@ public class CollectionBasic {
         //移除c1所包含的所有元素
         System.out.println(c.removeAll(c1));
 //        创建集合专门存放学生对象
-        Collection stus = new ArrayList();
-        stus.add(new Student("闫昊", 18));
-        stus.add(new Student("杨硕", 20));
-        stus.add(new Student("阿木", 21));
-        stus.add(new Student("郭雅鑫", 20));
+        Collection stus=new ArrayList();
+        stus.add(new Student("闫昊",18));
+        stus.add(new Student("杨硕",20));
+        stus.add(new Student("阿木",21));
+        stus.add(new Student("郭雅鑫",20));
         System.out.println(stus);
         System.out.println(stus.remove(new Student("闫昊", 18)));
         //集合转数组遍历
@@ -90,7 +90,7 @@ public class CollectionBasic {
 //        通过迭代器
         Iterator iterator = stus.iterator();
 //        通过迭代器遍历  先判断是否有更多元素
-        while (iterator.hasNext()) {
+        while (iterator.hasNext()){
 //            获取下一个元素
             System.out.println(iterator.next());
         }

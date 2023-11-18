@@ -77,7 +77,7 @@ public class PropertiesDemo {
 //创建读取文件的流
         FileInputStream fis = null;
         InputStreamReader isr = null;
-        PrintWriter pw = null;
+        PrintWriter pw=null;
         try {
 
             fis = new FileInputStream("01code/src/01.properties");
@@ -91,13 +91,13 @@ public class PropertiesDemo {
             Stu stu = new Stu(name, age, p.getProperty("address"), p.getProperty("hobby"));
             System.out.println(stu);
             //往集合中添加元素  磁盘文件不会有变化
-            p.setProperty("gender", "男");
-            p.setProperty("tel", "13312344321");
-            p.setProperty("level", "low");
+            p.setProperty("gender","男");
+            p.setProperty("tel","13312344321");
+            p.setProperty("level","low");
             //实例化输出流
-            pw = new PrintWriter("01code/src/01.properties");
+            pw=new PrintWriter("01code/src/01.properties");
             //将数据持久化到文件
-            p.store(pw, "");
+            p.store(pw,"");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -107,7 +107,7 @@ public class PropertiesDemo {
                 if (fis != null) {
                     fis.close();
                 }
-                if (pw != null)
+                if (pw!=null)
                     pw.close();
             } catch (IOException e) {
                 e.printStackTrace();
