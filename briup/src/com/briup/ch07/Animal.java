@@ -2,11 +2,7 @@ package com.briup.ch07;
 
 import java.lang.String;
 
-/**
- * @Author briup-adam
- * @Date 2023/10/8 上午10:34
- * @Description
- **/
+
 
 abstract public  class Animal {
     static  int count=10;

@@ -2,11 +2,7 @@ package com.briup.ch07;
 
 import java.lang.String;
 
-/**
- * @Author briup-adam
- * @Date 2023/10/10 下午5:21
- * @Description   实现接口的类简称实现类
- **/
+
 
 public class ActionImpl  implements IAction{
 
